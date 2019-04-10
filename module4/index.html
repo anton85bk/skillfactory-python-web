@@ -9,6 +9,8 @@
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 			crossorigin="anonymous"
 		/>
+		<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -19,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-center" style="font-family: 'Roboto', sans-serif;">
 			<h1 onclick="set_content_in_divs(get_data_from_jsion())">Что день 2019-04-10 готовит</h1>
 		</div>
 
@@ -54,7 +56,7 @@
 		function set_content_in_divs(paragraphs) {
 			$.each(paragraphs, function(i, d) {
 						p = $("#p-" + i);
-						p.html("<p style=\"padding : 45px\">" + d + "</p>");
+						p.html("<p style=\"padding: 45px;font-family: 'Caveat', cursive;font-size: 22pt;\">" + d + "</p>");
 				           }
 			      )
 		}
