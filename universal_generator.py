@@ -59,7 +59,7 @@ def generate_body(top_header: str, page_template: str,
                   page_data: str, bottom_link_url: str,
                   bottom_link_name: str) -> str:
     " Функция заполняет BODY-секцию итогового HTML-кода "
-    result = "\t<!-- generated body -->\n" 
+    result = "\t<!-- generated body -->\n"
     result += generate_top(top_header)
     result += generate_middle(page_template, page_data)
     result += generate_bottom(bottom_link_url, bottom_link_name)
