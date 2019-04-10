@@ -10,24 +10,29 @@
 			crossorigin="anonymous"
 		/>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<h1 onclick="set_content_in_divs(get_data_from_jsion())">Что день 2019-04-10 готовит</h1>
-
-		<div class="row">
-			<div class="col" id="p-0">
-			</div>
-			<div class="col" id="p-1">
-			</div>
-			<div class="col" id="p-2">
-			</div>
-		<div class="row">
+		<div class="jumbotron text-center">
+			<h1 onclick="set_content_in_divs(get_data_from_jsion())">Что день 2019-04-10 готовит</h1>
 		</div>
-			<div class="col" id="p-3">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4" id="p-0" style="background-color:OldLace;">
+				</div>
+				<div class="col-4" id="p-1" style="background-color:lavender;">
+				</div>
+				<div class="col-4" id="p-2" style="background-color:OldLace;">
+				</div>
+			<div class="row">
 			</div>
-			<div class="col" id="p-4">
-			</div>
-			<div class="col" id="p-5">
+				<div class="col-4" id="p-3" style="background-color:lavender;">
+				</div>
+				<div class="col-4" id="p-4" style="background-color:OldLace;">
+				</div>
+				<div class="col-4" id="p-5" style="background-color:lavender;">
+				</div>
 			</div>
 		</div>
 	</body>
@@ -36,15 +41,12 @@
 /*			forecasts_url = "http://localhost:8080/api/forecasts"; */
 			forecasts_url = "https://sf-pyw.mosyag.in/m04/api/forecasts";
 			$.getJSON(forecasts_url, function(data) {
-							console.log(data["prophecies"])
 							set_content_in_divs(data["prophecies"])
 						 }
 					)
 		}
 		function set_content_in_divs(paragraphs) {
-			console.log("we have: " + paragraphs);
 			$.each(paragraphs, function(i, d) {
-						console.log("Paragraphs:");
 					   	p = $("#p-" + i);
 					   	p.html("<p>" + d + "</p>");
 				           }
@@ -52,4 +54,3 @@
 		}
 	</script>
 </html>
-
