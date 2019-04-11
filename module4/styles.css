@@ -1,0 +1,21 @@
+body {
+	background-color: indigo;
+}
+#upper_div {
+	background-color: indigo;
+	height: 30px;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+#p-0, #p-2, #p-4 {
+	background-color: OldLace;
+}
+#p-1, #p-3, #p-5 {
+	background-color:lavender;	
+}
+.p_forecast {
+	padding: 45px;
+	font-family: 'Caveat', cursive;
+	font-size: 22pt;
+}
