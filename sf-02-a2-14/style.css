@@ -1,0 +1,101 @@
+/* === область окружающая "шапку" и "первый этаж" === */
+#header {
+    background-color: #F6F2F2;
+    padding: 50px 0px;
+}
+/* область с информацией (имеет отступ слева и справа) */
+.content {
+    margin: auto;
+    width: 80%;
+}
+
+/* === навигационный блок === */
+#main_nav {
+    background-color: #000000;
+}
+/* div с группой навигационных ссылок - выровнен по центру */
+#nav_links {
+    margin: auto;
+    width: 45%;
+    height: 89px;
+}
+/* отдельная ссылка в навигационном блоке - текст отцентрирован */
+.nav_link {
+    display: inline-block;
+    text-align: center;
+    min-width: 180px;
+    min-height: 52px;
+    padding-top: 36px;
+    width: 5%;
+}
+/* фон ссылки меняет цвет */
+.nav_link:hover {
+    color: #E0E0E0;
+    background-color: #FF3F40;
+}
+/* оформление для текста ссылок */
+#main_nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+#main_nav a:visited {
+    color: #E0E0E0;
+}
+
+/* === блок с информацией об организации === */
+#about div {
+    vertical-align: bottom;
+    padding: 20px 0px;
+}
+/* текстовая информация об организации */
+#about-text {
+    display: inline-block;
+    width: 50%;
+}
+/* заголовок */
+#about-text h1 {
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1.5px;
+    margin-bottom: 36px;
+}
+/* описание*/
+#about-text p {
+    width: 80%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 61px;
+}
+/* ссылка на контакты, в виде кнопки */
+#about-text a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+    color: #FFFFFF; 
+    background-color: #FF3F40;
+    padding: 13px 35px; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+/* видео-информация об организации */
+#about-video {
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
