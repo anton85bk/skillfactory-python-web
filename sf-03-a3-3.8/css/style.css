@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: #F6F2F2;
+}
+
+.nav-menu {
+    /* выровнять сам контейнер по центру, без flex */
+    padding: 0;
+    width: 75%;
+    margin: 0 auto;
+
+    /* оформление самого контейнера */
+    list-style: none;
+    min-height: 75px;
+    background-color: black;
+
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu a {
+    /* оформление элемента меню */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 30px;
+    height: 89px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    /* выравниваем текст ссылки по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu a:hover {
+    color: #E0E0E0;
+    background-color: #FF3F40;
+}
+
+.intro-wrapper {
+    /* выровнять сам контейнер по центру, без flex */
+    width: 75%;
+    margin: 50 auto;
+    
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-text h1 {
+    /* оформление заголовка */
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.about-text p {
+    /* оформление абзаца текста */
+    width: 60%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.about-text a {
+    /* оформление ссылки-кнопки */
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF; 
+    background-color: #FF3F40;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 55px;
+}
