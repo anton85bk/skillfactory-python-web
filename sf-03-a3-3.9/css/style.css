@@ -1,0 +1,118 @@
+body {
+    margin-top: 29px;
+    margin-left: 0px;
+    background-color: #F6F2F2;
+}
+.view-screen {
+    width: 1577px;
+}
+
+.nav-menu-background {
+    background-color: black;
+    width: 79.25%;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    /* оформление самого контейнера */
+    list-style: none;
+    margin: 0 27.25%;
+    width: 40.7%;
+
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu a {
+    /* оформление элемента меню */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 9px;
+    height: 80px;
+    width: 100px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+
+    /* выравниваем текст ссылки по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu a:hover {
+    color: #E0E0E0;
+    background-color: #FF3F40;
+}
+
+.intro-wrapper {
+    /* выровнять сам контейнер по центру, без flex */
+    width: 79.2%;
+/*    margin-top: 34; */
+    margin-top: 86;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-text h1 {
+    /* оформление заголовка */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 1.52px;
+    line-height: 74px;
+}
+.about-text .h1-2nd-line {
+    /* почему-то на макете у 2-ой строчки
+    расстояние между символами больше */
+    letter-spacing: 5.9px;
+}
+
+.about-text p {
+    /* оформление абзаца текста */
+    margin: 0;
+    margin-top: 16px;
+    letter-spacing: 0;
+    width: 80%;
+    line-height: 28px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.about-text a {
+    /* оформление ссылки-кнопки */
+    display: inline-block;
+    width: 116px;
+    height: 31px;
+    margin-top: 58px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF; 
+    background-color: #FF3F40;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 55px;
+}
+
+.about-video {
+    margin-top: 16px;
+    margin-left: 99px;
+}
