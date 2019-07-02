@@ -1,0 +1,613 @@
+@media screen and (min-width: 1500px) {
+    nav {
+	width: 40.7%;
+	margin: 0 27.25%;
+    }
+    .title-article{
+	max-width: 50%;
+    }
+    article h1 {
+	font-size: 3.12vw;
+    }
+    aside {
+	width: 50%;
+    }
+    aside img {
+        float: right; 
+    }
+}
+@media screen and (max-width: 1500px) {
+    nav {
+	width: 50%;
+	margin: 0 27.25%;
+    }
+    .title-article {
+	max-width: 50%;
+    }
+    article h1 {
+        font-size: 40px;
+    }
+    aside {
+	width: 50%;
+    }
+    aside img {
+        float: right; 
+    }
+}
+@media screen and (max-width: 1302px) {
+    nav {
+	width: 100%;
+	margin: 0;
+    }
+    .title-article {
+	max-width: 100%;
+    }
+    article h1 {
+	font-size: 60px; 
+    }
+    aside {
+	width: 100%;
+    }
+    aside img {
+        float: left; 
+	width: 100%;
+    }
+}
+@media screen and (max-width: 643px) {
+    nav {
+	flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    article h1 {
+	font-size: 30px; 
+    }
+}
+body {
+    margin-top: 29px;
+    margin-left: 0px;
+}
+main {
+    background-color: #F6F2F2;
+}
+.view-screen {
+    width: 83.2%;
+}
+
+header {
+    background-color: black;
+    width: 79.25%;
+    margin: 0 auto;
+}
+
+nav {
+    /* оформление самого контейнера */
+    list-style: none;
+
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    /* оформление элемента меню */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 9px;
+    height: 80px;
+    width: 100px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+
+    /* выравниваем текст ссылки по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a:hover {
+    color: #E0E0E0;
+    background-color: #FF3F40;
+}
+
+main {
+    /* выровнять сам контейнер по центру, без flex */
+    width: 79.2%;
+    margin-top: 86;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* через flex работаем с саб-элементами */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+article {
+    min-width: 420px;
+}
+
+article h1 {
+    /* оформление заголовка */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 1.52px;
+    line-height: 74px;
+
+    /* перенос слов в заголовке при масштабировании окна */
+    hyphens: manual;
+}
+article .h1-2nd-line {
+    /* почему-то на макете у 2-ой строчки
+    расстояние между символами больше */
+    letter-spacing: 5.9px;
+}
+
+article p {
+    /* оформление абзаца текста */
+    margin: 0;
+    margin-top: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.title-article a {
+    color: #FFFFFF; 
+    background-color: #FF3F40;
+}
+.article-2 a {
+    background-color: #FFFFFF; 
+    color: #FF3F40;
+    border: 2px solid #FF3F40;
+    width: 113px;
+    height: 27px;
+}
+
+article a {
+    /* оформление ссылки-кнопки */
+    display: inline-block;
+    width: 116px;
+    height: 31px;
+    margin-top: 58px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px 55px;
+}
+
+aside {
+    margin-top: 16px;
+}
+
+aside img {
+    min-width: 400px;
+    max-width: 88%;
+    height: auto;
+}
+
+.article-normal {
+    width: 79.2%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* подгоняем контент 2-ой статьи к шаблону */
+.article-2 {
+    display: flex;
+    padding-top: 206px;
+}
+.article-normal h2 {
+    /* оформление заголовка */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+
+    /* перенос слов в заголовке при масштабировании окна */
+    hyphens: manual;
+}
+.article-2 p {
+    padding-top: 15px;
+    width: 85%;
+}
+
+.article-2-left {
+    width: 1250px;
+}
+
+.article-2-right {
+    padding-top: 9px;
+    padding-left: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-2-item {
+    width: 300px;
+    padding-bottom: 27px;
+}
+
+.article-normal h3 {
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.article-2-right p {
+    margin: -33 0 0 0;
+    padding: 0;
+}
+.icon1 {
+    margin-top: 3px;
+    background-color: #FF3F40;
+    width: 42px;
+    height: 42px;
+}
+
+/* подгоняем контент 3-ей статьи к шаблону */
+.article-3 {
+    text-align: center;
+    padding-top: 164px;
+    padding-left: 1px;
+}
+
+.article-3 h2 {
+    padding-left: 23px;
+}
+
+.article-3 p {
+    padding-left: 41px;
+    margin-top: 12px;
+}
+.article-3-nav {
+    width: 100%;
+    margin-top: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.article-3-nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 0px;
+    width: 198px;
+}
+.article-3-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1250px;
+
+    margin-top: 57px;
+    margin-left: -3px;
+}
+.article-3-pic {
+    background-color: #5281FF;
+    width: 297px;
+    height: 290px;
+    margin-bottom: 20px;
+}
+
+/* подгоняем контент 4-ой статьи к шаблону */
+.article-4 {
+    margin-top: 105px;
+}
+.mark-waugh {
+    margin-top: 106px;
+    margin-left: -1px;
+    display: flex;
+}
+.mark-waugh-photo {
+    width: 467px;
+    height: 458px;
+    background-color: #FF3F40; 
+}
+.mark-waugh-card {
+    margin-left: 73px;
+    width: 100%;
+}
+
+.mark-waugh-card h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    margin-top: 5px;
+    padding: 0;
+}
+.mark-waugh-card p {
+    margin-top: -15px;
+}
+
+.mark-waugh-card-sm {
+    margin-top: 40px;
+    margin-left: -15px;
+}
+.mark-waugh-card-sm a {
+    padding: 0;
+    margin: 0;
+
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: normal;
+}
+.mark-waugh-card-sm a:visited {
+    color: black;
+}
+
+.mark-waugh-collegues {
+    padding-top: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98.9%;
+}
+.mark-waugh-sokina-jue-photo {
+    width: 198px;
+    height: 178px;
+    background-color: #FF3F40; 
+}
+.mark-waugh-sokina-jue-name {
+    width: 198px;
+    height: 37px;
+    background-color: #732626; 
+    color: white;
+
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.0762px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mark-waugh-collegue {
+    width: 198px;
+    height: 215px;
+    background-color: #FF3F40; 
+}
+
+/* подгоняем контент 5-ой статьи к шаблону */
+.article-dark {
+    background-color: #2C2C2C;
+    color: white;
+    text-align: center;
+
+    margin-top: 109px;
+
+    padding-top: 125px;
+    padding-bottom: 140px;
+}
+.article-dark h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 24px;
+    letter-spacing: 0.95px
+}
+.article-dark p {
+    margin-top: -10px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.9953px;
+    line-height: 28px;
+}
+.article-dark .form {
+    padding-top: 58px;
+    width: 47.7%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-dark .text-input {
+    background: white;
+    color: #2C2C2C;
+    width: 483px;
+    height: 79px;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 35px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.article-dark .button {
+    background-color: #FF3F40;
+    width: 215px;
+    height: 79px;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17.9026px;
+    line-height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* подгоняем контент 6-ой статьи к шаблону */
+.article-6 {
+    margin-top: 94px;
+}
+
+.article-6 h2 {
+    margin-left: 163px;
+}
+
+.article-6 p {
+    margin-top: 30px;
+    margin-left: 163px;
+}
+
+.article-6 {
+    width: 100%;
+}
+
+.article-6 .form-and-contact-info {
+    margin-top: 132px;
+    display: flex;
+}
+
+
+.article-6 .form {
+    width: 50.5%;
+    margin-left: 128px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.article-6 .form-input-field {
+    background: #dcdcdc;
+    color: black;
+    border-radius: 5px;
+}
+
+.article-6 .contact-info {
+    width: 31.5%;
+    margin-left: 72px;
+    background-color: #2C2C2C;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding-top: 131px;
+    padding-left: 84px;
+    padding-bottom: 125px;
+
+}
+
+.article-6 .contact-info h4 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.article-6 .contact-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.article-6 .form-name, .article-6 .form-mail {
+    width: 294px;
+    height: 69px;
+    margin-bottom: 48px;
+
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 46px;
+    align-items: center;
+}
+
+.article-6 .form-message {
+    width: 685px;
+    height: 215px;
+
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.article-6 a {
+    margin-top: 44px;
+    width: 615px;
+    height: 49px;
+    color: white;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #FF3F40;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* оформляем футер */
+footer {
+    color: white;
+    background-color: black;
+    min-height: 111px;
+    width: 100%; 
+    margin: 112px auto 10px auto;
+
+    /* выравнивание элементов внутри футера */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 19px 0 0 8.5vw;
+    font-size: 14px;
+    letter-spacing: 0.25px
+}
+
+
+footer .social-network-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 8vw 0 5vw;
+}
+
+footer .social-network-icon {
+    width: 32px;
+    height: 32px;
+    margin: 17px 10px 0px 9px;
+}
