@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>6.8</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- подключаем бутстрап-css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+</style>
+</head>
+<body>
+
+<!-- HTML-код прогрессбара -->
+<h1>Задание на progressbar:<h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+</div>
+<button id="button1" class="progress-bar-btn">+1%</button>
+<button id="button2" class="progress-bar-btn">+3%</button>
+<button id="button3" class="progress-bar-btn">+7%</button>
+
+<!-- подключение jQuery + BootstrapJS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Скрипт для выполнения задания -->
+<script>
+// функция которая увеличивает значение прогрессбара:
+function add_to_progressbar(event_obj) {
+	let current_progress = document.querySelector(".progress-bar").innerText;
+	current_progress = current_progress.substr(0, current_progress.length - 1);
+	let button_progress = event_obj.target.textContent.substr(1, event_obj.target.textContent.length - 2);
+	let absolute_progress = parseInt(button_progress) + parseInt(current_progress);
+	if (absolute_progress < 100) {
+		$(".progress-bar").width(absolute_progress + "%");
+		document.querySelector(".progress-bar").innerText = absolute_progress + "%";
+	} else {
+		alert("Прогрессбар переполнился!\nЗначение сброшено до 1%.")
+		$(".progress-bar").width("1%");
+		document.querySelector(".progress-bar").innerText = "1%";
+	}
+}
+
+// в момент готовности документа прикрепляем функцию к кнопкам:
+$(document).ready(function() {
+	$(".progress-bar-btn").click(add_to_progressbar);
+
+});
+</script>
+</body>
+</html>
