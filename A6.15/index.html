@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/game.css">
+
+    <title>PWS A6 HW</title>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>10 квадратов</h1>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-11"></div>
+        <div class="col game-field align-text-bottom" id="slot-12"></div>
+        <div class="col game-field align-text-bottom" id="slot-13"></div>
+        <div class="col game-field align-text-bottom" id="slot-14"></div>
+        <div class="col game-field align-text-bottom" id="slot-15"></div>
+        <div class="col game-field align-text-bottom" id="slot-16"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-21"></div>
+        <div class="col game-field align-text-bottom" id="slot-22"></div>
+        <div class="col game-field align-text-bottom" id="slot-23"></div>
+        <div class="col game-field align-text-bottom" id="slot-24"></div>
+        <div class="col game-field align-text-bottom" id="slot-25"></div>
+        <div class="col game-field align-text-bottom" id="slot-26"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-31"></div>
+        <div class="col game-field align-text-bottom" id="slot-32"></div>
+        <div class="col game-field align-text-bottom" id="slot-33"></div>
+        <div class="col game-field align-text-bottom" id="slot-34"></div>
+        <div class="col game-field align-text-bottom" id="slot-35"></div>
+        <div class="col game-field align-text-bottom" id="slot-36"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-41"></div>
+        <div class="col game-field align-text-bottom" id="slot-42"></div>
+        <div class="col game-field align-text-bottom" id="slot-43"></div>
+        <div class="col game-field align-text-bottom" id="slot-44"></div>
+        <div class="col game-field align-text-bottom" id="slot-45"></div>
+        <div class="col game-field align-text-bottom" id="slot-46"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-51"></div>
+        <div class="col game-field align-text-bottom" id="slot-52"></div>
+        <div class="col game-field align-text-bottom" id="slot-53"></div>
+        <div class="col game-field align-text-bottom" id="slot-54"></div>
+        <div class="col game-field align-text-bottom" id="slot-55"></div>
+        <div class="col game-field align-text-bottom" id="slot-56"></div>
+      </div>
+      <div class="row">
+        <div class="col game-field align-text-bottom" id="slot-61"></div>
+        <div class="col game-field align-text-bottom" id="slot-62"></div>
+        <div class="col game-field align-text-bottom" id="slot-63"></div>
+        <div class="col game-field align-text-bottom" id="slot-64"></div>
+        <div class="col game-field align-text-bottom" id="slot-65"></div>
+        <div class="col game-field align-text-bottom" id="slot-66"></div>
+      </div>
+
+      <div id="win-message" class="d-none">
+        <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд<span class="total-missed-message d-none"> но промахнулись </span><span id="total-missed-message-counter" class="total-missed-message d-none"></span><span class="total-missed-message d-none"> раз</span>.</h2>
+	<h2>Итоговый счёт: <span id="total-score"></span></h2>
+      </div>
+      <div class="row">
+        <button id="button-reload" class="btn btn-primary d-none">Играть заново</button>
+        <button id="button-start" class="btn btn-primary">Начать игру</button>
+      </div>
+    </div>
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
