@@ -50,10 +50,10 @@ def get_albums_artist(artist):
     result += """
 <form action="/albums/" method="post">
     <fieldset style="width:25%">
-    <input type="text" name="artist" placeholder="Artist" value="New Artist"><br>
-    <input type="text" name="genre" placeholder="Genre" value="Rock"></br>
-    <input type="text" name="album" placeholder="Album" value="Super"><br>
-    <input type="text" name="year" placeholder="Year" value="1999"><br>
+    <input type="text" name="artist" placeholder="Artist"><br>
+    <input type="text" name="genre" placeholder="Genre"></br>
+    <input type="text" name="album" placeholder="Album"><br>
+    <input type="text" name="year" placeholder="Year"><br>
     <input type="submit">
     </fieldset>
 </form>"""
