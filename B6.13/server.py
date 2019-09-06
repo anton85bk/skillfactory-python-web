@@ -32,19 +32,21 @@ class Album(Base):
         return self.album
 # 
 
-## Обработчик GET запроса
 @route("/albums/<artist>")
 def get_albums_artist(artist):
+    " Обработчик GET запроса "
+
     albums = session.query(Album).filter(Album.artist == artist).order_by(Album.year).all()
     result = """
 <p>Для группы <strong>'{}'</strong> найдено альбомов <strong>{}</strong></p>
 <p><ol>{}</ol></p>
     """.format(artist, len(albums), "\n".join(["<li>" + item.album + " (жанр " + item.genre + ", " + str(item.year) + " г.)</li>"  for item in albums]))
 
-    if len(albums) == 0:
+    # если ничего не нашлось добавим примечание о важности регистра в названиях
+    if not albums:
         result += "<p><em>Названия групп чувствительны к регистру, возможно из-за этого ничего не было найдено.</em></p>"
 
-
+    # для удобства добавим форму чтобы через неё отправлять post-запросы:
     result += """
 <form action="/albums/" method="post">
     <fieldset style="width:25%">
@@ -59,9 +61,9 @@ def get_albums_artist(artist):
     return result
 #
 
-## Обработчик POST запроса
 @route("/albums/", method="POST")
 def post_albums():
+    " Обработчик POST запроса "
     new_album = Album()
     new_album.artist = request.forms.get("artist")
     new_album.genre = request.forms.get("genre")
