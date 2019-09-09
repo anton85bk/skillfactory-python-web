@@ -7,7 +7,6 @@ const plus = document.querySelector('.plus');
 const minus = document.querySelector('.minus');
 const start_stop = document.querySelector('.start-stop');
 
-
 let countSec = 0;
 let countMin = 0;
 let timer_is_stop = 1;
@@ -27,6 +26,8 @@ const countDown = () => {
         if (total <= 0) {
             clearInterval(timeinterval);
             timer.style.display = 'none';
+            plus.style.display = 'none';
+            minus.style.display = 'none';
             message.innerHTML = '<p>I am done...</p>'
             start_stop.style.backgroundColor = 'yellow'
             start_stop.innerHTML = 'reset'
